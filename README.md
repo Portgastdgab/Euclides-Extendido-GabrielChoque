@@ -20,19 +20,21 @@ Forma en la que realice el algoritmo en C++:
      Hacer x = v[i-1]
     
 Ejemplo:
-  x = Euclid_extended(A, B)
-  x = Euclid_extended(9, 275)    //El inverso existe porque el mcd de 9 y 275 = 1; 9 = 3^2; 275 = (5^2) * 11
-  
-  Reemplazando en el pseudocodigo quedaria:
-  i     y[i]     g[i]     u[i]     v[i]
-  0     -        275      1        0
-  1     -        9        0        1
-  2     30       5        1        -30
-  3     1        4        -1       31
-  4     1        1        2        -61
-  5     4        0        -9       275 
+
+      x = Euclid_extended(A, B)
+      x = Euclid_extended(9, 275)    //El inverso existe porque el mcd de 9 y 275 = 1; 9 = 3^2; 275 = (5^2) * 11
+
+      Reemplazando en el pseudocodigo quedaria:
+      i     y[i]     g[i]     u[i]     v[i]
+      0     -        275      1        0
+      1     -        9        0        1
+      2     30       5        1        -30
+      3     1        4        -1       31
+      4     1        1        2        -61
+      5     4        0        -9       275 
   
   El proceso se repite hasta que g[i] = 0; y el inverso de (9, 275) = -61 + 275 = 214
+  
   x = 214, pues 214 * 9 = 1926; 1926mod275 = 1
   
   ¿Que tan rapido es el algoritmo de Euclides?
