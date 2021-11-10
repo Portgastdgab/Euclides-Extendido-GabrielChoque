@@ -37,6 +37,3 @@ Ejemplo:
   
   x = 214, pues 214 * 9 = 1926; 1926mod275 = 1
   
-  ¿Que tan rapido es el algoritmo de Euclides?
-  Es muy rapido, por lo general llega a la solucion en muy pocos pasos, por ejemplo encontrar el mcd dentro de un cuerpo de
-  2048 bits es instantaneo.
